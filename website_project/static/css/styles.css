@@ -1,0 +1,16 @@
+/* * {
+  border: 1px solid pink;
+} */
+
+body, html {
+  height: 100%;
+}
+
+
+#bg {
+   background-image: url('images/kai_and_lela.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100%;  
+}
