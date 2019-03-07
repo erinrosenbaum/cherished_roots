@@ -45,26 +45,27 @@
                   {{ user.username }}
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="">Logout</a>
+                  <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
                   <a class="dropdown-item" href="#">Change password</a>
                 </div>
+              </li>
                 {% else %}
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Welcome
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="">Login</a>
-                    <a class="dropdown-item" href="">Signup</a>
+                    <a class="dropdown-item" href="{% url 'login' %}">Login</a>
+                    <a class="dropdown-item" href="{% url 'signup' %}">Signup</a>
                   </div>
+                </li>
                 {% endif %}
 
-              </li>
             </ul>
           </div>
         </nav>
 
-        <div class="content">
+        <div class="container">
           {% block content %}
           {% endblock %}
         </div>
