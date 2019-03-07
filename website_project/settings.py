@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'users',
     'pages',
     'crispy_forms',
+    'blog',
+    'taggit',
 ]
 
 MIDDLEWARE = [
@@ -127,7 +129,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'website_project/static/')
+    os.path.join(BASE_DIR, 'website_project/static/'),
 ]
 
 
