@@ -1,6 +1,14 @@
-/* * {
+* {
   border: 1px solid pink;
-} */
+}
+
+
+
+ #navbarNavDropdown > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 body, html {
   height: 100%;
