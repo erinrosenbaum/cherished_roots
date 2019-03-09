@@ -1,17 +1,55 @@
-* {
+/* * {
   border: 1px solid pink;
+} */
+
+/* html {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+} */
+
+/* 16px @ 480px increasing to 32px @ 1920px */
+/* 1em(16px) @ 18em(288px) increasing to 2em(32px) @ 120em(1920px) */
+@media (min-width: 18em) {
+  :root {
+    font-size: calc(1rem + ((1vw - 0.18em) * 0.9804));
+    /* Where: * 0.9804 = 100 * font_Size_Difference / viewport_Width_Difference */
+  }
+}
+/* Prevent font scaling beyond this breakpoint */
+@media (min-width: 120em) {
+  :root {
+    font-size: 2em;
+  }
 }
 
 
-
- #navbarNavDropdown > ul > li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav {
+  font-size: 0.6rem;
 }
+
+ .dropdown-item {
+    font-size: 0.7rem;
+ }
+
+ .navbar-nav {
+   align-items: center;
+ }
+
 
 body, html {
   height: 100%;
+}
+h2 {
+  white-space: nowrap;
 }
 
 
@@ -21,6 +59,7 @@ body, html {
    background-repeat: no-repeat;
    background-size: cover;
    height: 100%;
+   color: white;
 }
 
 .bg {
@@ -29,6 +68,23 @@ body, html {
    background-repeat: no-repeat;
    background-size: cover;
    height: 800px;
+}
+
+#nutrition_pic {
+   background-image: url('images/kai_and_lela.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100%;
+}
+
+.other_services {
+   display: flex;
+   background-image: url('images/family.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100%;
 }
 
 /* #profile {

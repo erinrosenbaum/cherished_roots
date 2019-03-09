@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Doula Support{% endblock %}
+
+{% block content %}
+<body id="bg">
+  <h1>Doula Support</h1>
+  {% if user.is_authenticated %}
+    Hi, {{ user.username }}
+    <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
+    <a class="dropdown-item" href="#">Change password</a>
+  {% else %}
+    Not logged in:
+    <a class="white" href="{% url 'login' %}"> Login</a> |
+    <a class="white" href="{% url 'signup' %}">Signup</a>
+  {% endif %}
+</body>
+{% endblock %}
