@@ -1,0 +1,18 @@
+
+[Unit]
+Description=gunicorn daemon
+Requires=gunicorn.socket
+After=network.target
+
+[Service]
+User=sammy
+Group=www-data
+WorkingDirectory=/home/erinrosenbaum/cherished_roots
+ExecStart=/home/sammy/erinrosenbaum/cherished_roots/venv/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/gunicorn.sock \
+          website_project.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
