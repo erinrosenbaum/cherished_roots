@@ -82,7 +82,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'oswald_db',
-        'USER': 'mac',
+        'USER': 'erinrosenbaum',
         'PASSWORD': 'Baums226',
         'HOST': 'localhost',
         'PORT': '5432',
@@ -139,6 +139,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass

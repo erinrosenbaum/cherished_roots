@@ -1,11 +1,44 @@
-/* * {
-  border: 1px solid red;
+* {
+  border: 1px solid pink;
+}
+
+
+
+ #navbarNavDropdown > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body, html {
+  height: 100%;
+}
+
+
+#bg {
+   background-image: url('images/kai_and_lela.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100%;
+}
+
+.bg {
+   background-image: url('images/kai_and_lela.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 800px;
+}
+
+/* #profile {
+   background-image: url('images/laura.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100%;
 } */
 
-/* body {
-  background-image: url('{{STATIC_URL}}images/kai_and_lela.jpg');
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+.white {
+  color: white;
+}
