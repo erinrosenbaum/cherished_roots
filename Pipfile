@@ -8,7 +8,7 @@ verify_ssl = true
 [packages]
 django = "*"
 django-taggit = "*"
-pillow = "==5.4"
+pillow = "==8.2.0"
 uwsgi = "*"
 
 [requires]
